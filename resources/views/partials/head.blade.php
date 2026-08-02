@@ -13,3 +13,8 @@
 
 @vite(['resources/css/app.css', 'resources/js/app.js'])
 @fluxAppearance
+<style>
+[x-cloak] {
+    display: none !important;
+}
+</style>
