@@ -12,6 +12,7 @@ Route::middleware(['auth', 'verified'])
     ->name('ui.')
     ->group(function () {
         Route::livewire('/meeting-notes', 'pages::meeting-notes')->name('meeting-notes');
+        Route::livewire('/profile-settings', 'pages::profile-settings')->name('profile-settings');
     });
 
 require __DIR__.'/settings.php';

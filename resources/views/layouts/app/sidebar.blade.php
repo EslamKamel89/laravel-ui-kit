@@ -27,6 +27,10 @@
                     :current="request()->routeIs('ui.meeting-notes')" wire:navigate>
                     {{ __('Meeting Notes') }}
                 </flux:sidebar.item>
+                <flux:sidebar.item icon="user-circle" :href="route('ui.profile-settings')"
+                    :current="request()->routeIs('ui.profile-settings')" wire:navigate>
+                    {{ __('Profile Settings') }}
+                </flux:sidebar.item>
             </flux:sidebar.group>
         </flux:sidebar.nav>
 

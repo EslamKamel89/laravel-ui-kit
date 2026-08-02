@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\Meeting;
 use App\Models\User;
+use App\Models\UserSetting;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -22,6 +23,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'admin',
             'email' => 'admin@gmail.com',
         ]);
+        $this->command->info('admin user created!');
         Meeting::factory()->create([
             'title' => 'Spring Planning',
             'date' => now()->addDay(),
@@ -31,5 +33,13 @@ class DatabaseSeeder extends Seeder
             - Assign task to team members
             TEXT
         ]);
+        $this->command->info('Meeting created!');
+        UserSetting::create([
+            'name' => 'John Doe',
+            'theme' => 'light',
+            'language' => 'english',
+        ]);
+
+        $this->command->info('User settings created!');
     }
 }
