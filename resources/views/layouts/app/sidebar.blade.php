@@ -31,6 +31,10 @@
                     :current="request()->routeIs('ui.profile-settings')" wire:navigate>
                     {{ __('Profile Settings') }}
                 </flux:sidebar.item>
+                <flux:sidebar.item icon="archive-box" :href="route('ui.product-wizard')"
+                    :current="request()->routeIs('ui.product-wizard')" wire:navigate>
+                    {{ __('Product Wizard') }}
+                </flux:sidebar.item>
             </flux:sidebar.group>
         </flux:sidebar.nav>
 

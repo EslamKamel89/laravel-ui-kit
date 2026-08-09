@@ -163,3 +163,55 @@ html:active-view-transition-type(backward) {
         grid-template-rows: 1fr;
     }
 }
+@keyframes slide-out-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+@keyframes slide-in-right {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-in-left {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes slide-out-right {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+html:active-view-transition-type(forward) {
+    &::view-transition-old(form) {
+        animation: 300ms ease-in-out slide-out-left both;
+    }
+
+    &::view-transition-new(form) {
+        animation: 300ms ease-in-out slide-in-right both;
+    }
+}
+html:active-view-transition-type(backward) {
+    &::view-transition-old(form) {
+        animation: 300ms ease-in-out slide-out-right both;
+    }
+
+    &::view-transition-new(form) {
+        animation: 300ms ease-in-out slide-in-left both;
+    }
+}
