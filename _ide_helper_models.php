@@ -35,6 +35,16 @@ namespace App\Models{
 
 namespace App\Models{
 /**
+ * @method static \Database\Factories\TagFactory factory($count = null, $state = [])
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Tag newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Tag newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|Tag query()
+ */
+	class Tag extends \Eloquent {}
+}
+
+namespace App\Models{
+/**
  * @property int $id
  * @property string $name
  * @property string $email
@@ -71,10 +81,22 @@ namespace App\Models{
 
 namespace App\Models{
 /**
+ * @property int $id
+ * @property string $name
+ * @property string $theme
+ * @property string $language
+ * @property \Carbon\CarbonImmutable|null $created_at
+ * @property \Carbon\CarbonImmutable|null $updated_at
  * @method static \Database\Factories\UserSettingFactory factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder<static>|UserSetting newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|UserSetting newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|UserSetting query()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|UserSetting whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|UserSetting whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|UserSetting whereLanguage($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|UserSetting whereName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|UserSetting whereTheme($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|UserSetting whereUpdatedAt($value)
  */
 	class UserSetting extends \Eloquent {}
 }

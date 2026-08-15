@@ -35,6 +35,10 @@
                     :current="request()->routeIs('ui.product-wizard')" wire:navigate>
                     {{ __('Product Wizard') }}
                 </flux:sidebar.item>
+                <flux:sidebar.item icon="tag" :href="route('ui.tag-input')"
+                    :current="request()->routeIs('ui.tag-input')" wire:navigate>
+                    {{ __('Tag Input') }}
+                </flux:sidebar.item>
             </flux:sidebar.group>
         </flux:sidebar.nav>
 

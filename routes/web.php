@@ -14,6 +14,7 @@ Route::middleware(['auth', 'verified'])
         Route::livewire('/meeting-notes', 'pages::meeting-notes')->name('meeting-notes');
         Route::livewire('/profile-settings', 'pages::profile-settings')->name('profile-settings');
         Route::livewire('/product-wizard', 'pages::product-wizard')->name('product-wizard');
+        Route::livewire('/tag-input', 'pages::tag-input')->name('tag-input');
     });
 
 require __DIR__.'/settings.php';
