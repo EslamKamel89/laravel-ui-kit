@@ -39,6 +39,10 @@
                     :current="request()->routeIs('ui.tag-input')" wire:navigate>
                     {{ __('Tag Input') }}
                 </flux:sidebar.item>
+                <flux:sidebar.item icon="arrow-down-circle" :href="route('ui.infinite-scroll')"
+                    :current="request()->routeIs('ui.infinite-scroll')" wire:navigate>
+                    {{ __('Infinite Scroll') }}
+                </flux:sidebar.item>
             </flux:sidebar.group>
         </flux:sidebar.nav>
 

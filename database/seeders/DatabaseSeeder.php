@@ -43,5 +43,7 @@ class DatabaseSeeder extends Seeder
         $this->command->info('User settings created!');
         Tag::factory(30)->create();
         $this->command->info('Tags created!');
+        $this->call(PostSeeder::class);
+        $this->command->info('Posts seeded successfully');
     }
 }

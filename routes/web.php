@@ -15,6 +15,7 @@ Route::middleware(['auth', 'verified'])
         Route::livewire('/profile-settings', 'pages::profile-settings')->name('profile-settings');
         Route::livewire('/product-wizard', 'pages::product-wizard')->name('product-wizard');
         Route::livewire('/tag-input', 'pages::tag-input')->name('tag-input');
+        Route::livewire('/infinite-scroll', 'pages::infinite-scroll')->name('infinite-scroll');
     });
 
 require __DIR__.'/settings.php';
