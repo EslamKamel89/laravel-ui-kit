@@ -45,5 +45,7 @@ class DatabaseSeeder extends Seeder
         $this->command->info('Tags created!');
         $this->call(PostSeeder::class);
         $this->command->info('Posts seeded successfully');
+        $this->call(NotificationSeeder::class);
+        $this->command->info('Notifications seeded successfully');
     }
 }
