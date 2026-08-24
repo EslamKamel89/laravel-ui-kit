@@ -18,6 +18,7 @@ Route::middleware(['auth', 'verified'])
         Route::livewire('/infinite-scroll', 'pages::infinite-scroll')->name('infinite-scroll');
         Route::livewire('/notification-center', 'pages::notification-center')->name('notification-center');
         Route::livewire('/dynamic-search', 'pages::dynamic-search')->name('dynamic-search');
+        Route::livewire('/kanban-board', 'pages::kanban-board')->name('kanban-board');
     });
 
 require __DIR__.'/settings.php';

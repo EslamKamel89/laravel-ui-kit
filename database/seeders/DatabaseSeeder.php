@@ -47,5 +47,7 @@ class DatabaseSeeder extends Seeder
         $this->command->info('Posts seeded successfully');
         $this->call(NotificationSeeder::class);
         $this->command->info('Notifications seeded successfully');
+        $this->call(TaskSeeder::class);
+        $this->command->info('Tasks seeded successfully');
     }
 }

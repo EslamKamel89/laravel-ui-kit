@@ -51,6 +51,10 @@
                     :current="request()->routeIs('ui.dynamic-search')" wire:navigate>
                     {{ __('Dynamic Search') }}
                 </flux:sidebar.item>
+                <flux:sidebar.item icon="view-columns" :href="route('ui.kanban-board')"
+                    :current="request()->routeIs('ui.kanban-board')" wire:navigate>
+                    {{ __('Kanban Board') }}
+                </flux:sidebar.item>
             </flux:sidebar.group>
         </flux:sidebar.nav>
 
