@@ -43,6 +43,14 @@
                     :current="request()->routeIs('ui.infinite-scroll')" wire:navigate>
                     {{ __('Infinite Scroll') }}
                 </flux:sidebar.item>
+                <flux:sidebar.item icon="bell" :href="route('ui.notification-center')"
+                    :current="request()->routeIs('ui.notification-center')" wire:navigate>
+                    {{ __('Notification Center') }}
+                </flux:sidebar.item>
+                <flux:sidebar.item icon="magnifying-glass" :href="route('ui.dynamic-search')"
+                    :current="request()->routeIs('ui.dynamic-search')" wire:navigate>
+                    {{ __('Dynamic Search') }}
+                </flux:sidebar.item>
             </flux:sidebar.group>
         </flux:sidebar.nav>
 

@@ -16,6 +16,8 @@ Route::middleware(['auth', 'verified'])
         Route::livewire('/product-wizard', 'pages::product-wizard')->name('product-wizard');
         Route::livewire('/tag-input', 'pages::tag-input')->name('tag-input');
         Route::livewire('/infinite-scroll', 'pages::infinite-scroll')->name('infinite-scroll');
+        Route::livewire('/notification-center', 'pages::notification-center')->name('notification-center');
+        Route::livewire('/dynamic-search', 'pages::dynamic-search')->name('dynamic-search');
     });
 
 require __DIR__.'/settings.php';
